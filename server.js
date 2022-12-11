@@ -3,6 +3,9 @@ const http = require('http');
 const hostname = 'localhost';
 const port = 3000;
 
+const path = require('path');
+const fs = require('fs');
+
 const server = http.createServer((req, res) => {
    console.log(req.headers); 
    res.statusCode = 200;
